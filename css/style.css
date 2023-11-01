@@ -1,0 +1,128 @@
+:root {
+    --primary-background-color: #0074e4;
+    --primary-text-color: #333333;
+    --secondary-background-color: #f5f5f5;
+    --button-background-color: #4caf50;
+    --link-color: #2196f3;
+    --body-font: 'Nunito', sans-serif;
+    --heading-font: 'Playfair Display', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--primary-text-color);
+    background-color: var(--secondary-background-color);
+}
+
+header {
+    background-color: var(--primary-background-color);
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-family: var(--heading-font);
+    color: white;
+    font-size: 24px;
+}
+
+.social-icons {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.social-icons i {
+    margin: 0 10px;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.interactive-elements {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    flex: 1;
+    padding-right: 25px;
+}
+
+.interactive-elements iframe {
+    width: 100%;
+    aspect-ratio: 1.5/1;
+    object-fit: contain;
+}
+
+.interactive-button,
+.interactive-link,
+.interactive-dropdown {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.interactive-button {
+    border: 2px solid transparent;
+    transition: border-color linear 0.3s;
+}
+
+.interactive-elements > *:hover {
+    border-color: var(--primary-background-color);
+}
+
+.selected {
+    border: 2px solid var(--button-background-color);
+    background-color: rgba(76, 175, 80, 0.2);
+}
+
+.interactive-dropdown {
+    background-color: white;
+}
+
+.dashboard {
+    width: 300px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.dashboard h2 {
+    font-family: var(--heading-font);
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+ul#selected-elements-list {
+    list-style: none;
+    padding: 0;
+}
+
+ul#selected-elements-list li {
+    margin-bottom: 10px;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.buttons button {
+    margin: 0 10px;
+}

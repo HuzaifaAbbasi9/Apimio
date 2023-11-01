@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Visual Interaction Selector</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Visual Interaction Selector</h1>
+            <div class="buttons">
+                <button id="toggle-selection-mode-button" class="interactive-button">Toggle Selection Mode</button>
+            </div>
+        </header>
+        <div class="container">
+            <main>
+                <div class="interactive-elements">
+                    <button type="button" class="interactive-button">Subscribe</button>
+                    <button type="button" class="interactive-button">Download</button>
+                    <button type="button" class="interactive-button">Contact Us</button>
+                    <a href="#" class="interactive-link">Read More</a>
+                    <a href="#" class="interactive-link">Visit Our Store</a>
+                    <select name="dropdown" class="interactive-dropdown">
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+                    <iframe
+                        src="https://www.youtube.com/embed/5Peo-ivmupE?si=yvfby-CJFsESkWxr"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+                <div class="dashboard">
+                    <h2>Selected Elements</h2>
+                    <ul id="selected-elements-list"></ul>
+                </div>
+            </main>
+        </div>
+        <script src="js/script.js" defer></script>
+    </body>
+</html>
